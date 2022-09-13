@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Home</title>
 </head>
 <body>
-    <h1>hola github soy rocio</h1>
+  
+  <header>
+    <div>
+      <img src="./img/logo.png" alt="logo" class="loguito">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="generos.html">Generos</a>
+      <a href="favoritos.html">Fav</a>
+      <a href="detalle.html">Detalle</a>
+    </nav>
+    <div>
+      <form action="resultados-busqueda.html">
+        <input type="text" class="buscar">
+        <input type="submit" value="Buscar" class="buscar">
+      </form>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Películas populares</h2>
+
+      <div class="listado-items"> 
+
+        <article class="item">
+          <a href="detalle.html">
+            <img src= "./img/titanic foto.jpg" alt="pela" class="titan">
+            <h4>
+              Titanic
+            </h4>
+            <p>Estreno 20/08/22</p>
+          </a>
+        </article>
+      
+        <article class="item">
+          <a href="detalle.html">
+            <img src="./img/dog.jpeg" alt="perro" class="channing" >
+            <h4>
+              Dog: Un viaje salvaje
+            </h4>
+            <p>Estreno 30/10/2022</p>
+          </a>
+        </article>
+      
+
+      </div>
+
+    </section>
+    
+    <section>
+      <h2>Películas mas vistas</h2>
+
+      <div class="listado-items"> 
+
+        <article class="item">
+          <a href="">
+            <img src="img/rapidos.jpeg" alt="fast" class="rapido">
+            <h4>
+              Rapidos y Furiosos 5
+            </h4>
+            <p>Estrenada 18/04/2020</p>
+          </a>
+        </article>
+      
+        <article class="item">
+          <a href="">
+            <img src="img/thor.jpeg" alt="tor" class="fuerte">
+            <h4>
+              Thor
+            </h4>
+            <p>Estrenada 24/08/2022</p>
+          </a>
+        </article>
+      
+
+      </div>
+
+    </section>
+    
+    <section>
+      <h2>Series mas recomendadas</h2>
+
+      <div class="listado-items"> 
+
+        <article class="item">
+          <a href="">
+            <img src="img/greys.jpeg" alt="meredith" class="grey">
+            <h4>
+              Grey's Anatomy
+            </h4>
+            <p>Estrenada 23/05/2012</p>
+          </a>
+        </article>
+      
+        <article class="item">
+          <a href="">
+            <img src="img/poster-friends.jpeg" alt="amigos" class="amigo">
+            <h4>
+              Friends
+            </h4>
+            <p>Estrenada 03/10/2015</p>
+          </a>
+        </article>
+      
+
+      </div>
+
+    </section>
+    
+
+  </main>
+
+  <footer>
+    <ul>
+      <li>Rocio Richards</li>
+      <li>Agustina Natali Flores</li>
+      <li>Matteo Graziano</li>
+    </ul>
+  </footer>
 </body>
 </html>

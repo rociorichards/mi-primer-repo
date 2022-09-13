@@ -1,0 +1,101 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  body {
+    background-color: rgb(3, 3, 53);
+  }
+  
+  header {
+    background-color: #151568;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    margin: 0px 20px;
+    color: white;
+  }
+  
+  header div form .buscar {
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  main {
+    /* background-color: antiquewhite; */
+    padding: 20px;
+  }
+  
+  main section {
+    margin-bottom: 50px;
+  }
+  
+  main section h2 {
+    color: white;
+  }
+  
+  .listado-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .item {
+    background-color: #33339e;
+    text-align: center;
+    width: 200px
+  }
+  .titan {
+    width: 200px;
+    height: 300px;
+  }
+  .channing {
+    width: 200px;
+    height: 300px;
+  }
+  .rapido {
+    width: 200px;
+    height: 300px;
+  }
+  .fuerte {
+    width: 200px;
+    height: 300px;
+  }
+  .grey {
+    width: 200px;
+    height: 300px
+  }
+  .amigo {
+    width: 200px;
+    height: 300px
+  }
+  .item a {
+    text-decoration: none;
+    color:white;
+  }
+  
+  .item a:hover {
+    color:rgb(194, 173, 12);
+  }
+  
+  footer {
+    background-color: #151568;
+    padding: 15px;
+  }
+  
+  footer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    color:white
+  }
+  
+  
