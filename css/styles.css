@@ -18,11 +18,13 @@
     text-decoration: none;
     margin: 0px 20px;
     color: white;
+
   }
   
   header div form .buscar {
     border-radius: 20px;
     padding: 5px 10px;
+    
   }
   
   main {
@@ -116,7 +118,7 @@
     color:white
   }
   
-  
+
   
    
   
