@@ -1,11 +1,8 @@
-html,body {
+  body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-  }
-  
-  body {
     background-color: rgb(3, 3, 53);
   }
   
@@ -29,15 +26,11 @@ html,body {
   }
   
   main {
-    /* background-color: antiquewhite; */
     padding: 20px;
-  }
-  
-  main section {
     margin-bottom: 50px;
   }
   
-  main section h2 {
+  h2 {
     color: white;
   }
   
@@ -50,31 +43,56 @@ html,body {
   .item {
     background-color: #33339e;
     text-align: center;
-    width: 200px
+    width: 330px
   }
+    
   .titan {
-    width: 200px;
-    height: 300px;
+    width: 330px;
+    height: 400px;
   }
   .channing {
-    width: 200px;
-    height: 300px;
+    width: 330px;
+    height: 400px;
   }
+  .shrek {
+    width: 330px;
+    height: 400px; 
+   }
+   .gracioso {
+    width: 330px;
+    height: 400px; 
+   }
   .rapido {
-    width: 200px;
-    height: 300px;
+    width: 330px;
+    height: 400px;
   }
   .fuerte {
-    width: 200px;
-    height: 300px;
+    width: 330px;
+    height: 400px;
+  }
+  .ella {
+    width: 330px;
+    height: 400px;
+  }
+  .juman {
+    width: 330px;
+    height: 400px;
   }
   .grey {
-    width: 200px;
-    height: 300px
+    width: 330px;
+    height: 400px;
   }
   .amigo {
-    width: 200px;
-    height: 300px
+    width: 330px;
+    height: 400px;
+  }
+  .got {
+    width: 330px;
+    height: 400px;
+  }
+  .to {
+    width: 330px;
+    height: 400px;
   }
   .item a {
     text-decoration: none;
@@ -82,7 +100,7 @@ html,body {
   }
   
   .item a:hover {
-    color:rgb(194, 173, 12);
+    color:rgb(20, 19, 2);
   }
   
   footer {
@@ -97,5 +115,11 @@ html,body {
     justify-content: center;
     color:white
   }
+  
+  
+  
+   
+  
+  
   
   
