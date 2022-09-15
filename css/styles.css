@@ -22,6 +22,9 @@
     color: white;
 
   }
+  header nav a:hover {
+    color:rgb(20, 19, 2);;
+  }
   
   header div form .buscar {
     border-radius: 20px;
@@ -198,15 +201,19 @@ header form input{
     font-size: 24px;
     color: white;
     padding: 30px;
+    
   }
   .titane {
     width: 330px;
     height: 400px;
+   
+    
   }
   .rocio {
     width: 330px;
     height: 400px;
     margin-left: 20px;
+    
   }
   .gato {
     width: 330px;
@@ -220,5 +227,13 @@ header form input{
  }
  .perro {
    margin-bottom: 50px;
+ }
+ .grey1 {
+   margin-left: 20px;
+   width: 330px;
+  height: 400px;
+ }
+ .udesa {
+   background-color: rgb(21, 1, 68);
  }
  
