@@ -195,17 +195,30 @@ header form input{
     padding-top: 0%;
   }
   .rochi {
-    text-align: center;
     font-size: 24px;
     color: white;
-    
+    padding: 30px;
   }
-  .yo {
-    display: flex;
-    gap: 20px;
-   
+  .titane {
+    width: 330px;
+    height: 400px;
   }
   .rocio {
     width: 330px;
     height: 400px;
+    margin-left: 20px;
+  }
+  .gato {
+    width: 330px;
+    height: 400px;
+    
+  }
+ .gato1 {
+  width: 330px;
+  height: 400px;
+  margin-left: 20px;
  }
+ .perro {
+   margin-bottom: 50px;
+ }
+ 
