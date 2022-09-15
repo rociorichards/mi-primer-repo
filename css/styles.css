@@ -239,9 +239,14 @@ header form input{
  .item1 {
   width: 330px;
   height: 400px;
-  padding: 10px 20px;
-  
-  
+  padding: 20px 40px;  
+}
+
+.segundo {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration-line: underline;
+  text-align: center;
   
   
 }
@@ -251,6 +256,13 @@ header form input{
   text-align: center;
   
 }
+.ro {
+  font-size: large;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
 
 
  
