@@ -239,7 +239,8 @@ header form input{
  .item1 {
   width: 330px;
   height: 400px;
-  padding: 20px 40px;  
+  padding: 20px 40px; 
+  
 }
 
 .segundo {
@@ -255,12 +256,16 @@ header form input{
   text-decoration: none;
   text-align: center;
   
+  
 }
 .ro {
   font-size: large;
   color: white;
   text-align: center;
   text-decoration: underline;
+}
+.listado-items {
+  margin-bottom: 50px;
 }
 
 
