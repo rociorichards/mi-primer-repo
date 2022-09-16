@@ -125,7 +125,7 @@
   }
   
 
-
+/* DETAIL-------------------------------------------------------------------------------- */
 .loguito{
   width: 100px;
   height: 100px;
@@ -136,63 +136,56 @@ header div img{
   height: auto;
 }
 
-  header nav a{
-    font-size: 30px;
-  }
-  h2{
-    font-size: 15px;
-  }
-  header form input{
-    font-size: 18px;
-  }
+header nav a{
+  font-size: 30px;
+}
+h2{
+  font-size: 15px;
+}
+header form input{
+  font-size: 18px;
+}
 
-  .contenido{
-    box-sizing: border-box;
-    padding-bottom: 10%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  .portadac{
-    width: 300px;
-    height: 480px;
-    vertical-align: middle;
-  }
-  .elemento{
-    max-width: 500%;
-    max-height: 500%;
-  }
-  .contenedorpadre{
-    background-image: url(../img/portadadetalle.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    justify-content: space-around;
-    background-color:rgba(179, 179, 234, 0.196);
-    align-items: center;
-    flex-direction: row;
-  }
+.contenido{
+  background-color: rgb(3, 3, 53);
+  padding-bottom: 4%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.titulo{
+  font-size: 300%;
+}
+.contenedorpadre{
+  background-image: url(../img/portadadetalle.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+}
 
-  .elemento1{
-    color: white;
-    font-size: 15px;
-    padding-left: 13%;
-    padding-right: 13%;
-    background-color: #151568;
-  }
-  .sinopsis{
-    padding-left: 4%;
-    padding-right: 2%;
-    text-align: justify;
-    font-size: 130%;
-  }
-  header.title{
-    padding-bottom: 0%;
-  }
-  footer.dato{
-    padding-top: 0%;
-  }
+.datos{
+  background-color: rgb(3, 3, 53);
+  padding-right: 4%;
+  padding-left: 2%;
+  font-size: 120%;
+}
+.sinopsis{
+  padding-left: 4%;
+  padding-right: 2%;
+  text-align: justify;
+  font-size: 130%;
+}
+.caja{
+  background: linear-gradient(180deg,rgba(80, 80, 122, 0.002), rgb(3, 3, 53));
+  padding-top: 40%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+  
+}
+
+  /* DETAIL----------------------------------------------------------------------------------- */
   .rochi {
     font-size: 20px;
     color: white;
