@@ -37,7 +37,7 @@
     margin-bottom: 50px;
   }
   
-  h2 {
+  h1 {
     color: white;
   }
   
@@ -46,6 +46,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     justify-content: center;
+    gap: 20px;
    
   }
   
@@ -172,22 +173,50 @@ header form input{
   padding-right: 4%;
   padding-left: 2%;
   font-size: 120%;
+  color: white;
 }
 .sinopsis{
   padding-left: 4%;
   padding-right: 2%;
   text-align: justify;
   font-size: 130%;
+  color: white;
 }
 .caja{
   background: linear-gradient(180deg,rgba(80, 80, 122, 0.002), rgb(3, 3, 53));
   padding-top: 40%;
-  padding-bottom: 2%;
+  padding-bottom: 0%;
   padding-left: 4%;
-  
 }
 
-  /* DETAIL----------------------------------------------------------------------------------- */
+/* DETAIL SERIES-------------------------------------------------------------------------- */
+.contenedorprincipal{
+  background-image: url(../img/portadaserie.jpg);
+  background-size:1500px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+}
+.cajaserie{
+  background: linear-gradient(180deg,rgba(80, 80, 122, 0.002), rgb(3, 3, 53));
+  padding-top: 40%;
+  padding-bottom: 0%;
+  padding-left: 4%;
+  align-items: flex-start;
+}
+.tituloserie{
+  align-self: flex-start;
+}
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+}
+.favoritos{
+  padding-left: 10px;
+  
+}
+/* DETAIL----------------------------------------------------------------------------------- */
   .rochi {
     font-size: 20px;
     color: white;
