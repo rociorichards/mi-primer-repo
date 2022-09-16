@@ -136,30 +136,22 @@ header div img{
   height: auto;
 }
 
-header nav a{
-  font-size: 30px;
-}
-h2{
-  font-size: 20px;
-  
-}
-header form input{
-  font-size: 18px;
-}
-  .portadac{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    color: white;
-    font-size: larger;
+  header nav a{
+    font-size: 30px;
   }
-  
+  h2{
+    font-size: 15px;
+  }
+  header form input{
+    font-size: 18px;
+  }
 
   .contenido{
     box-sizing: border-box;
     padding-bottom: 10%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
   }
   .portadac{
     width: 300px;
@@ -171,9 +163,11 @@ header form input{
     max-height: 500%;
   }
   .contenedorpadre{
-    box-sizing: border-box;
-    display:flex;
-    flex-wrap: wrap;
+    background-image: url(../img/portadadetalle.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
     justify-content: space-around;
     background-color:rgba(179, 179, 234, 0.196);
     align-items: center;
@@ -187,9 +181,11 @@ header form input{
     padding-right: 13%;
     background-color: #151568;
   }
-  h1{
-    padding-bottom: 0%;
-    margin: 0%;
+  .sinopsis{
+    padding-left: 4%;
+    padding-right: 2%;
+    text-align: justify;
+    font-size: 130%;
   }
   header.title{
     padding-bottom: 0%;
@@ -239,8 +235,7 @@ header form input{
  .item1 {
   width: 330px;
   height: 400px;
-  padding: 20px 40px; 
-  
+  padding: 20px 40px;  
 }
 
 .segundo {
@@ -256,16 +251,12 @@ header form input{
   text-decoration: none;
   text-align: center;
   
-  
 }
 .ro {
   font-size: large;
   color: white;
   text-align: center;
   text-decoration: underline;
-}
-.listado-items {
-  margin-bottom: 50px;
 }
 
 
