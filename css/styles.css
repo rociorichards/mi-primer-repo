@@ -45,8 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    justify-content: center;
-    gap: 20px;
+    gap: 10px;
    
   }
   
@@ -142,9 +141,7 @@ header div img{
 header nav a{
   font-size: 30px;
 }
-h2{
-  font-size: 15px;
-}
+
 header form input{
   font-size: 18px;
 }
