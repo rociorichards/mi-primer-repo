@@ -131,10 +131,10 @@
   height: 100px;
 }
 
-  header div img{
-    width: auto;
-    height: auto;
-  }
+header div img{
+  width: auto;
+  height: auto;
+}
 
   header nav a{
     font-size: 30px;
@@ -147,14 +147,20 @@
   }
 
   .contenido{
-    background-color: rgb(3, 3, 53);
-    padding-bottom: 4%;
+    box-sizing: border-box;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
-  .titulo{
-    font-size: 300%;
+  .portadac{
+    width: 300px;
+    height: 480px;
+    vertical-align: middle;
+  }
+  .elemento{
+    max-width: 500%;
+    max-height: 500%;
   }
   .contenedorpadre{
     background-image: url(../img/portadadetalle.jpg);
@@ -163,13 +169,17 @@
     flex-direction: column;
     color: white;
     justify-content: space-around;
+    background-color:rgba(179, 179, 234, 0.196);
+    align-items: center;
+    flex-direction: row;
   }
-  
-  .datos{
-    background-color: rgb(3, 3, 53);
-    padding-right: 4%;
-    padding-left: 2%;
-    font-size: 120%;
+
+  .elemento1{
+    color: white;
+    font-size: 15px;
+    padding-left: 13%;
+    padding-right: 13%;
+    background-color: #151568;
   }
   .sinopsis{
     padding-left: 4%;
@@ -225,9 +235,14 @@
  .item1 {
   width: 330px;
   height: 400px;
-  padding: 10px 20px;
-  
-  
+  padding: 20px 40px;  
+}
+
+.segundo {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration-line: underline;
+  text-align: center;
   
   
 }
@@ -237,6 +252,13 @@
   text-align: center;
   
 }
+.ro {
+  font-size: large;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
 
 
  
