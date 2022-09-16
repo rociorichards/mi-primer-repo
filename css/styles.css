@@ -131,138 +131,61 @@
   height: 100px;
 }
 
-header div img{
-  width: auto;
-  height: auto;
-}
-
-header nav a{
-  font-size: 30px;
-}
-h2{
-  font-size: 20px;
-  
-}
-header form input{
-  font-size: 18px;
-}
-  .portadac{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    color: white;
-    font-size: larger;
+  header div img{
+    width: auto;
+    height: auto;
   }
-  
+
+  header nav a{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  header form input{
+    font-size: 18px;
+  }
 
   .contenido{
-    box-sizing: border-box;
-    padding-bottom: 10%;
+    background-color: rgb(3, 3, 53);
+    padding-bottom: 4%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
   }
-  .portadac{
-    width: 300px;
-    height: 480px;
-    vertical-align: middle;
-  }
-  .elemento{
-    max-width: 500%;
-    max-height: 500%;
+  .titulo{
+    font-size: 300%;
   }
   .contenedorpadre{
-    box-sizing: border-box;
-    display:flex;
-    flex-wrap: wrap;
+    background-image: url(../img/portadadetalle.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
     justify-content: space-around;
-    background-color:rgba(179, 179, 234, 0.196);
-    align-items: center;
-    flex-direction: row;
   }
-
-  .elemento1{
-    color: white;
-    font-size: 15px;
-    padding-left: 13%;
-    padding-right: 13%;
-    background-color: #151568;
+  
+  .datos{
+    background-color: rgb(3, 3, 53);
+    padding-right: 4%;
+    padding-left: 2%;
+    font-size: 120%;
   }
-  h1{
-    padding-bottom: 0%;
-    margin: 0%;
+  .sinopsis{
+    padding-left: 4%;
+    padding-right: 2%;
+    text-align: justify;
+    font-size: 130%;
   }
-  header.title{
-    padding-bottom: 0%;
-  }
-  footer.dato{
-    padding-top: 0%;
-  }
-  .rochi {
-    font-size: 20px;
-    color: white;
-    padding: 0px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  .caja{
+    background: linear-gradient(180deg,rgba(80, 80, 122, 0.002), rgb(3, 3, 53));
+    padding-top: 40%;
+    padding-bottom: 2%;
+    padding-left: 4%;
     
   }
-  .titane {
-    width: 330px;
-    height: 400px;
-   
-    
-  }
-  .rocio {
-    width: 330px;
-    height: 400px;
-    margin-left: 20px;
-    
-  }
-  .gato {
-    width: 330px;
-    height: 400px;
-    
-  }
- .gato1 {
-  width: 330px;
-  height: 400px;
-  margin-left: 20px;
- }
- .perro {
-   margin-bottom: 50px;
- }
- .grey1 {
-   margin-left: 20px;
-   width: 330px;
-  height: 400px;
- }
- .item1 {
-  width: 330px;
-  height: 400px;
-  padding: 20px 40px;  
-}
-
-.segundo {
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration-line: underline;
-  text-align: center;
   
   
-}
-.item2 {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  
-}
-.ro {
-  font-size: large;
-  color: white;
-  text-align: center;
-  text-decoration: underline;
-}
-
 
 
  
