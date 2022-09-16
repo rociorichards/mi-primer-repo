@@ -198,8 +198,6 @@ header form input{
   .titane {
     width: 330px;
     height: 400px;
-   
-    
   }
   .rocio {
     width: 330px;
@@ -226,9 +224,11 @@ header form input{
   height: 400px;
  }
  .item1 {
-  width: 330px;
-  height: 400px;
-  padding: 20px 40px;  
+  width: 250px;
+  padding: 10px 15px;  
+}
+.item1 img {
+  width: 100%;
 }
 
 .segundo {
@@ -251,6 +251,12 @@ header form input{
   text-align: center;
   text-decoration: underline;
 }
+@media(max-width:1076px){
+  
+}
+
+
+
 
 
 
