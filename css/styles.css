@@ -177,15 +177,66 @@
     text-align: justify;
     font-size: 130%;
   }
-  .caja{
-    background: linear-gradient(180deg,rgba(80, 80, 122, 0.002), rgb(3, 3, 53));
-    padding-top: 40%;
-    padding-bottom: 2%;
-    padding-left: 4%;
+  header.title{
+    padding-bottom: 0%;
+  }
+  footer.dato{
+    padding-top: 0%;
+  }
+  .rochi {
+    font-size: 20px;
+    color: white;
+    padding: 0px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
   }
+  .titane {
+    width: 330px;
+    height: 400px;
+   
+    
+  }
+  .rocio {
+    width: 330px;
+    height: 400px;
+    margin-left: 20px;
+    
+  }
+  .gato {
+    width: 330px;
+    height: 400px;
+    
+  }
+ .gato1 {
+  width: 330px;
+  height: 400px;
+  margin-left: 20px;
+ }
+ .perro {
+   margin-bottom: 50px;
+ }
+ .grey1 {
+   margin-left: 20px;
+   width: 330px;
+  height: 400px;
+ }
+ .item1 {
+  width: 330px;
+  height: 400px;
+  padding: 10px 20px;
   
   
+  
+  
+}
+.item2 {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  
+}
 
 
  
