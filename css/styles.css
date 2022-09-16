@@ -1,6 +1,7 @@
-/* ------------------------------------------------------HOME--------------------------------------------------- */
-  body {
-    padding: 0;
+
+
+  body { 
+  padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
@@ -20,6 +21,9 @@
     margin: 0px 20px;
     color: white;
 
+  }
+  header nav a:hover {
+    color:rgb(20, 19, 2);;
   }
   
   header div form .buscar {
@@ -60,6 +64,7 @@
   .shrek {
     width: 330px;
     height: 400px; 
+    
    }
    .gracioso {
     width: 330px;
@@ -95,8 +100,8 @@
   }
   .to {
     width: 330px;
-    height: 400px;
-  }
+    height: 400px; 
+   }
   .item a {
     text-decoration: none;
     color:white;
@@ -119,11 +124,12 @@
     color:white
   }
   
-/* ------------------------------------------------------DETAIL--------------------------------------------------- */
-  .loguito{
-    width: 100px;
-    height: 100px;
-  }
+
+
+.loguito{
+  width: 100px;
+  height: 100px;
+}
 
   header div img{
     width: auto;
@@ -181,5 +187,5 @@
   
   
 
-  
-  
+
+ 
