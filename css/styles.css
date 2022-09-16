@@ -44,7 +44,9 @@
   .listado-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-around;
+    justify-content: center;
+   
   }
   
   .item {
@@ -226,6 +228,7 @@ header form input{
  .item1 {
   width: 250px;
   padding: 10px 15px;  
+
 }
 .item1 img {
   width: 100%;
@@ -251,9 +254,7 @@ header form input{
   text-align: center;
   text-decoration: underline;
 }
-@media(max-width:1076px){
-  
-}
+
 
 
 
