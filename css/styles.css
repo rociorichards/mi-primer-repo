@@ -283,8 +283,30 @@ header form input{
   text-align: center;
   text-decoration: underline;
 }
+/* GÉNERO------------------------------------------------------- */
+.generos{
+  font-size: 150%;
+  display: flex;
+  flex-direction: row;
+  background-color: #00000086;
+  justify-content: center;
+  box-shadow: 1px 1px 30px 7px rgba(255, 255, 255, 0.26);
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
 
-
+}
+.masgeneros{
+  display: flex;
+  flex-direction: column;
+}
+.masmasgeneros{
+  display: flex;
+  flex-direction: column;
+}
+li{
+  color: white;
+}
 
 
 
