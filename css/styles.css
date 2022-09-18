@@ -215,6 +215,39 @@ header form input{
   
 }
 /* DETAIL----------------------------------------------------------------------------------- */
+/* FAVORITOS-------------------------------------------------------------------------------- */
+
+
+  .titanicc{
+    width: 330px;
+    height: 400px;
+  }
+  .rocioo{
+    width: 330px;
+    height: 400px;
+    margin-left: 20px;
+  }
+  .jumanjii{
+    width: 330px;
+    height: 400px;
+  }
+  .gatoo{
+    width: 330px;
+    height: 400px;
+  }
+  .gato11{
+    width: 330px;
+  height: 400px;
+  margin-left: 20px;
+  }
+  .grey11{
+    margin-left: 20px;
+   width: 330px;
+  height: 400px;
+  }
+
+
+  /* FAVORITOS-------------------------------------------------------------------------------- */
   .rochi {
     font-size: 20px;
     color: white;
@@ -224,10 +257,12 @@ header form input{
     margin-top: 20px;
     
   }
+
   .titane {
     width: 330px;
     height: 400px;
   }
+ 
   .rocio {
     width: 330px;
     height: 400px;
@@ -397,10 +432,32 @@ li{
       display: flex;
       flex-direction: column;
     }
+
     .titanicc {
       width: 280px;
     }
+    .rocioo{
+      width: 280px;
+      margin-left: 0px;
+    }
+    .jumanjii{
+      width: 280px;
+      margin-left: 0px;
+    }
+    .grey11{
+      width: 280px;
+      margin-left: 0px;
+    }
+    .gato11{
+      width: 280px;
+      margin-left: 0px;
+    }
+    .gatoo{
+      width: 280px;
+      margin-left: 0px;
+    }
 
+   
   /* FAVORITOS------------------------------------------------------------------------------------*/
 
 
