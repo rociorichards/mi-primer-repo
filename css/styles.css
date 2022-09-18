@@ -14,10 +14,16 @@
     padding: 10px 20px;
   }
   
+  .loguito{
+    width: 100px;
+    height: 100px;
+  }
+  
   header nav a {
     text-decoration: none;
     margin: 0px 20px;
     color: white;
+    font-size: 30px;
 
   }
   header nav a:hover {
@@ -27,6 +33,7 @@
   header div form .buscar {
     border-radius: 20px;
     padding: 5px 10px;
+    font-size: 18px;
     
   }
   
@@ -128,26 +135,6 @@
   
 
 /* DETAIL-------------------------------------------------------------------------------- */
-.loguito{
-  width: 100px;
-  height: 100px;
-}
-
-header div img{
-  width: auto;
-  height: auto;
-}
-
-header nav a{
-  font-size: 30px;
-}
-h2{
-  font-size: 15px;
-}
-header form input{
-  font-size: 18px;
-}
-
 .contenido{
   background-color: rgb(3, 3, 53);
   padding-bottom: 4%;
@@ -246,7 +233,20 @@ header form input{
    width: 330px;
   height: 400px;
   }
-
+  .yo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+  }
+  .perro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+  }
 
   /* FAVORITOS-------------------------------------------------------------------------------- */
   .rochi {
@@ -338,12 +338,9 @@ header form input{
   display: flex;
   flex-direction: column;
 }
-li{
-  color: white;
-}
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {
-     
+  /* HEADER Y FOOTER------------------------------------------------------------------------------------- */
     header {
       padding-right: 290px;
       width: 15px;
@@ -373,18 +370,10 @@ li{
       height: 55px;
     }
     
-    
+  /* HEADER Y FOOTER------------------------------------------------------------------------------------- */
+
   /* DETAIL-------------------------------------------------------------------------------- */
 
-  header div img{
-    width: auto;
-    height: auto;
-  }
-  
-  header form input{
-    font-size: 18px;
-  }
-  
   .contenido{
     padding-bottom: 4%;
     display: flex;
@@ -461,74 +450,7 @@ li{
    
   /* FAVORITOS------------------------------------------------------------------------------------*/
 
-
-    .rochi {
-      font-size: 20px;
-      color: white;
-      padding: 0px;
-      text-align: left;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      
-    }
-    .titane {
-      width: 330px;
-      height: 400px;
-    }
-    .rocio {
-      width: 330px;
-      height: 400px;
-      margin-left: 20px;
-      
-    }
-    .gato {
-      width: 330px;
-      height: 400px;
-      
-    }
-   .gato1 {
-    width: 330px;
-    height: 400px;
-    margin-left: 20px;
-   }
-   .perro {
-     margin-bottom: 50px;
-   }
-   .grey1 {
-     margin-left: 20px;
-     width: 330px;
-    height: 400px;
-   }
-   .item1 {
-    width: 250px;
-    padding: 10px 15px;  
-  
-  }
-  .item1 img {
-    width: 100%;
-  }
-  
-  .segundo {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration-line: underline;
-    text-align: center;
-    
-    
-  }
-  .item2 {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    
-  }
-  .ro {
-    font-size: large;
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-  }
-  /* GÉNERO------------------------------------------------------- */
+  /* GÉNERO----------------------------------------------------------------------------------------*/
   .generos{
     font-size: 150%;
     display: flex;
@@ -549,9 +471,7 @@ li{
     display: flex;
     flex-direction: column;
   }
-  li{
-    color: white;
-  }
+
 }
 
 
