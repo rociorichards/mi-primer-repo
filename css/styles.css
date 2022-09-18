@@ -317,7 +317,7 @@
   text-align: center;
   text-decoration: underline;
 }
-/* GÉNERO------------------------------------------------------- */
+/* GÉNEROs------------------------------------------------------- */
 .generos{
   display: flex;
   flex-direction: row;
@@ -339,6 +339,9 @@
 }
 .clasif{
   font-size: 25px;
+}
+.sindecoracion{
+  text-decoration: none;
 }
 
 
