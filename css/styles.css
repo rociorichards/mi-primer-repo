@@ -319,7 +319,6 @@
 }
 /* GÉNERO------------------------------------------------------- */
 .generos{
-  font-size: 150%;
   display: flex;
   flex-direction: row;
   background-color: #00000086;
@@ -338,6 +337,10 @@
   display: flex;
   flex-direction: column;
 }
+.clasif{
+  font-size: 25px;
+}
+
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {
   /* HEADER Y FOOTER------------------------------------------------------------------------------------- */
@@ -452,16 +455,13 @@
 
   /* GÉNERO----------------------------------------------------------------------------------------*/
   .generos{
-    font-size: 150%;
     display: flex;
     flex-direction: row;
     background-color: #00000086;
     justify-content: center;
     box-shadow: 1px 1px 30px 7px rgba(255, 255, 255, 0.26);
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-  
+    margin: 50px 10px 15px 10px ;
+
   }
   .masgeneros{
     display: flex;
@@ -471,7 +471,10 @@
     display: flex;
     flex-direction: column;
   }
-
+  .clasif{
+    font-size: 20px;
+  }
+  
 }
 
 
