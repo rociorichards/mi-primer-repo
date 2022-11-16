@@ -12,7 +12,7 @@ fetch("https://api.themoviedb.org/3/movie/550?api_key=8d82a1bf2b697b9dbc93552eab
 .then(function(data){
     //Me guardo los titulos en una variable y luego con inner y queryselectorall le asigno los titulos corresponedientes
     let titulopeli= (data.title);
-    document.querySelectorAll(".prueba3").innerHTML=titulopeli;
+    document.querySelectorAll(".titulo").innerHTML=titulopeli;
     //Hago lo mismo con el fondo
     let fondo=(data.poster_path);
 })
