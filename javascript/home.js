@@ -12,13 +12,7 @@ fetch(urlPopulares)
     for(let i=0; i < data.results.length; i++) {
       html = html + `
         <article class="item">
-          <a href="detalle.html?id=${ data.results[i].id }&tipo=movie">
-            <img src="https://image.tmdb.org/t/p/w500/${ data.results[i].poster_path }" alt="pela" class="titan">
-            <h4>
-              ${ data.results[i].title }
-            </h4>
-            <p>Estreno ${ data.results[i].release_date }</p>
-          </a>
+          
         </article>
       `
     }
@@ -38,13 +32,7 @@ fetch(urlMasVisto)
    for(let i=0; i < data.results.length; i++) {
     html = html + `
       <article class="item">
-        <a href=detalle.html?id=${ data.results[i].id }&tipo=movie">
-          <img src="https://image.tmdb.org/t/p/w500/${ data.results[i].poster_path }" alt="pela" class="titan">
-          <h4>
-            ${ data.results[i].title }
-          </h4>
-          <p>Estreno ${ data.results[i].release_date } </p>
-        </a>
+        
       </article>
     `
   }
@@ -63,13 +51,7 @@ fetch(urlSeries)
     for(let i=0; i < data.results.length; i++) {
         html = html + `
           <article class="item">
-            <a href="detalle.html?id=${ data.results[i].id }&tipo=tv">
-              <img src="https://image.tmdb.org/t/p/w500/${ data.results[i].poster_path }" alt="pela" class="titan">
-              <h4>
-                ${ data.results[i].original_name }
-              </h4>
-              <p>Estreno ${ data.results[i].first_air_date }</p>
-            </a>
+            
           </article>
         `
       }
