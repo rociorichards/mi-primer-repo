@@ -1,7 +1,7 @@
 let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get('id');
 let tipo = urlParams.get('tipo');
-let url = `https://api.themoviedb.org/3/${ tipo }/${ id }?api_key=02e0e755b1f9c129e53aa7c8af3d9868`;
+let url = "https://api.themoviedb.org/3/movie/550?api_key=8d82a1bf2b697b9dbc93552eab4d6d93";
 
 fetch(url)
   .then(data => data.json())
