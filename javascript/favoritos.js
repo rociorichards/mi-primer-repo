@@ -1,7 +1,7 @@
 let peliculas = []
 let series = []
 
-let datosPeliculas = localStorage.getItem
+let datosPeliculas = localStorage.getItem('peliculas')
 let datosSeries = localStorage.getItem('series')
 
 if(datosPeliculas != null) {
@@ -16,7 +16,7 @@ let html1 = '';
 let html2 = '';
 
 for(let i = 0; i < peliculas.length; i++) {
-  html1 = html1 + `
+  html1 +=  `
         <article class="item">
           <a href="detalle.html?id=${ peliculas[i].id }&tipo=movie">
             <img src="https://image.tmdb.org/t/p/w500/${ peliculas[i].poster_path }" alt="pela" class="titan">
@@ -32,7 +32,7 @@ for(let i = 0; i < peliculas.length; i++) {
 contenedor1.innerHTML = html1;
 
 for(let i = 0; i < series.length; i++) {
-  html2 = html2 + `
+  html2 +=   `
         <article class="item">
           <a href="detalle.html?id=${ series[i].id }&tipo=tv">
             <img src="https://image.tmdb.org/t/p/w500/${ series[i].poster_path }" alt="pela" class="titan">
