@@ -1,22 +1,63 @@
-//Primero extraigo todos los datos de la API
-window.onload=function(){
-// Onload es un evento que se activa cuando termina de cargar la página, sirve para capturar los elementos del html mediante sus clases
-var urlParams= new URLSearchParams(window.location.search);// Sirve para obtener los parametros de una URL
-var ID= urlParams.get("idpeli");// Sirve para captar específicamente el ID de una pelicula 
+let urlParams = new URLSearchParams(window.location.search);
+let id = urlParams.get('id');
+let tipo = urlParams.get('tipo');
+let url = "https://api.themoviedb.org/3/movie/550?api_key=8d82a1bf2b697b9dbc93552eab4d6d93";
 
-fetch("https://api.themoviedb.org/3/movie/550?api_key=8d82a1bf2b697b9dbc93552eab4d6d93")//Func Asincrónica
-.then(function(response){//Funcion que toma como parámetro la respuesta de la API
-    return response.json()//Paso a formato JSON para que Java lo lea
-})
-//Ahora extraigo dato por dato y los asigno a las partes del html
-.then(function(data){
-    //Me guardo los titulos en una variable y luego con inner y queryselectorall le asigno los titulos corresponedientes
-    let titulopeli= (data.title);
-    document.querySelectorAll(".titulo").innerHTML=titulopeli;
-    //Hago lo mismo con el fondo
-    let fondo=(data.poster_path);
-})
+fetch(url)
+  .then(data => data.json())
+  .then(data => {
+    console.log(data);
 
-}
+    let titulo = document.querySelector('.titulo')
+    let sinopsis = document.querySelector('.sinopsis')
+
+    if(tipo == 'tv') {
+      titulo.innerHTML = data.name
+    }
+    if(tipo == 'movie') {
+      titulo.innerHTML = data.title
+    }
+
+    sinopsis.innerHTML = data.overview
+    
+    document.querySelector('.favoritos').addEventListener('click',()=>{
+
+      if(tipo == 'tv') {
+
+        let datosSeries = localStorage.getItem('series');
+        let series = [];
+  
+        if(datosSeries != null) {
+          series = JSON.parse(datosSeries);
+          series.push(data)
+        }
+        else{
+          series.push(data)
+        }
+        
+        localStorage.setItem('series', JSON.stringify(series))
+       
+      }
+
+      if(tipo == 'movie') {
+
+        let datosPeliculas = localStorage.getItem('peliculas');
+        let peliculas = [];
+  
+        if(datosPeliculas != null) {
+          peliculas = JSON.parse(datosPeliculas);
+          peliculas.push(data)
+        }
+        else{
+          peliculas.push(data)
+        }
+        
+        localStorage.setItem('peliculas', JSON.stringify(peliculas))
+      }
+
+
+    })
+
+  })
 
 
