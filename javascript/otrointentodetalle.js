@@ -1,14 +1,12 @@
-console.log('Hola mundo')
+
 //Primero extraigo todos los datos de la API
 let query = location.search
 let urlParams= new URLSearchParams(query);// Sirve para obtener los parametros de una URL
 
 let id= urlParams.get("id");// Sirve para captar específicamente el ID de una pelicula 
-console.log(id)
-console.log('hola chicos')
+let tipo= urlParams.get("tipo")
 
-
-fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=02e0e755b1f9c129e53aa7c8af3d9868`)//Func Asincrónica
+fetch(`https://api.themoviedb.org/3/${tipo}/${id}?api_key=02e0e755b1f9c129e53aa7c8af3d9868`)//Func Asincrónica
 .then(function(response){
     //Funcion que toma como parámetro la respuesta de la API
     return response.json()

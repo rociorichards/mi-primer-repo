@@ -1,7 +1,6 @@
-let peliculas = []
-let series = []
 
-let datosPeliculas = localStorage.getItem
+
+let datosPeliculas = localStorage.getItem("películas")
 let datosSeries = localStorage.getItem('series')
 
 if(datosPeliculas != null) {

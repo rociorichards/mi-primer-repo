@@ -54,6 +54,18 @@
     gap: 10px;
    
   }
+  .listado-items1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .listado-items2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
   
   .item {
     background-color: #33339e;
