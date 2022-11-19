@@ -1,6 +1,10 @@
 
 
+<<<<<<< HEAD
 let datosPeliculas = localStorage.getItem ('peliculas')
+=======
+let datosPeliculas = localStorage.getItem("películas")
+>>>>>>> cf8dc0cee8ddb75811107860a93d048992bb3151
 let datosSeries = localStorage.getItem('series')
 let peliculas
 let series
@@ -20,6 +24,7 @@ let contenedor2 = document.querySelector('#series-favoritas');
 let html1 = '';
 let html2 = '';
 
+<<<<<<< HEAD
 window.addEventListener('load', function(){
   let favs = getFavsStorage()
   if(favs.length == 0){
@@ -27,6 +32,19 @@ window.addEventListener('load', function(){
       <li>
           <h4>No tienes favoritos</h4>
       </li>
+=======
+for(let i = 0; i < peliculas.length; i++) {
+  html1 = html1 + `
+        <article class="item">
+          <a href="detalle.html?id=${ peliculas[i].id }&tipo=movie">
+            <img src="https://image.tmdb.org/t/p/w500/${ peliculas[i].poster_path }" alt="pela" class="titan">
+            <h4>
+              ${ peliculas[i].title }
+            </h4>
+            <p>Estreno ${ peliculas[i].release_date }</p>
+          </a>
+        </article>
+>>>>>>> cf8dc0cee8ddb75811107860a93d048992bb3151
       `
   } else {
       listContainer.innerHTML += `
@@ -41,11 +59,26 @@ window.addEventListener('load', function(){
 function getFavsStorage(){
   let storage = localStorage.getItem('favoritos')
 
+<<<<<<< HEAD
   if(storage !== null && storage !== undefined){
       return JSON.parse(storage)
   } else {
       return []
   }
+=======
+for(let i = 0; i < series.length; i++) {
+  html2 = html2 + `
+        <article class="item">
+          <a href="detalle.html?id=${ series[i].id }&tipo=tv">
+            <img src="https://image.tmdb.org/t/p/w500/${ series[i].poster_path }" alt="pela" class="titan">
+            <h4>
+              ${ series[i].name }
+            </h4>
+            <p>Estreno ${ peliculas[i].release_date }</p>
+          </a>
+        </article>
+      `
+>>>>>>> cf8dc0cee8ddb75811107860a93d048992bb3151
 }
 
 function getAllFavsAndPrint(arrFavs){
