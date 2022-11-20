@@ -143,6 +143,7 @@
     justify-content: center;
     color:white
   }
+
   
 
 /* DETAIL-------------------------------------------------------------------------------- */
@@ -180,9 +181,13 @@
 }
 .caja{
   background: linear-gradient(180deg,rgba(80, 80, 122, 0.002), rgb(3, 3, 53));
-  padding-top: 40%;
+  padding-top: 5%;
   padding-bottom: 0%;
   padding-left: 4%;
+}
+.fondoimg{
+  width: 2100px;
+  height: 1000px;
 }
 
 /* DETAIL SERIES-------------------------------------------------------------------------- */

@@ -7,6 +7,7 @@ let id= urlParams.get("id")// Sirve para captar específicamente el ID de una pe
 
 
 let container= document.querySelector('.caja')
+let section= document.querySelector('.sinopsis')
 
 console.log(id)
 
@@ -21,24 +22,27 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
 //Ahora extraigo dato por dato y los asigno a las partes del html
 //Me guardo los titulos en una variable y luego con inner y queryselectorall le asigno los titulos corresponedientes
     container.innerHTML = ` 
-        <div class="contenedorpadre">
-        <img class='fondoimg' src='https://image.tmdb.org/t/p/original${data.poster_path}' />
-        <div class="caja">
-        <h1 class="titulo">${data.title}</h1>
-        <div class="botones">
-            <section class="estrellas">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            </section>
-            <section class="favoritos">
-            <i class="fa-solid fa-circle-plus"></i>
-            </section>       
-        </div>
-        </div>
-    </div>
+            <img class='fondoimg' src='https://image.tmdb.org/t/p/original${data.backdrop_path}' />
+            <h1 class="titulo">${data.title}</h1>
+            <div class="botones">
+                <section class="estrellas">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </section>
+                <section class="favoritos">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </section>       
+            </div>
+           
+
+        `
+    section.innerHTML = ` 
+        <section class="sinopsis">
+        <p>${data.overview}</p>
+        </section>
         
 
         `
