@@ -1,12 +1,15 @@
-
 //Primero extraigo todos los datos de la API
 let query = location.search
-let urlParams= new URLSearchParams(query);// Sirve para obtener los parametros de una URL
 
-let id= urlParams.get("id");// Sirve para captar específicamente el ID de una pelicula 
-let tipo= urlParams.get("tipo");
+let urlParams= new URLSearchParams(query)// Sirve para obtener los parametros de una URL
+
+let id= urlParams.get("id")// Sirve para captar específicamente el ID de una pelicula 
+
+
+let container= document.querySelector('.caja')
+
 console.log(id)
-console.log(tipo)
+
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8af3d9868`)
 //Func Asincrónica
 .then(function(response){
@@ -17,13 +20,29 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
 .then(function(data){
 //Ahora extraigo dato por dato y los asigno a las partes del html
 //Me guardo los titulos en una variable y luego con inner y queryselectorall le asigno los titulos corresponedientes
-    let titulopeli= (data.title);
+    container.innerHTML = ` 
+        <div class="contenedorpadre">
+        <img class='fondoimg' src='https://image.tmdb.org/t/p/original${data.poster_path}' />
+        <div class="caja">
+        <h1 class="titulo">${data.title}</h1>
+        <div class="botones">
+            <section class="estrellas">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            </section>
+            <section class="favoritos">
+            <i class="fa-solid fa-circle-plus"></i>
+            </section>       
+        </div>
+        </div>
+    </div>
+        
 
-    document.querySelectorAll(".titulo").innerHTML=titulopeli;
+        `
 
-    //Hago lo mismo con el fondo
-
-    let fondo=(data.poster_path);
 })
 .catch(function(error){
     console.log(error)

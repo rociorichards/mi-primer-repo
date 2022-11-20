@@ -157,7 +157,6 @@
   font-size: 300%;
 }
 .contenedorpadre{
-  background-image: url(../img/portadadetalle.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
