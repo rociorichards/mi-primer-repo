@@ -150,12 +150,15 @@
 .contenido{
   background-color: rgb(3, 3, 53);
   padding-bottom: 4%;
+
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 .titulo{
   font-size: 300%;
+  margin-left: 7%;
+  margin-top: 1%;
 }
 .contenedorpadre{
   background-size: cover;
@@ -163,6 +166,9 @@
   flex-direction: column;
   color: white;
   justify-content: space-around;
+  align-items: center;
+  
+ 
 }
 
 .datos{
@@ -180,31 +186,26 @@
   color: white;
 }
 .caja{
-  background: linear-gradient(180deg,rgba(80, 80, 122, 0.002), rgb(3, 3, 53));
-  padding-top: 5%;
   padding-bottom: 0%;
-  padding-left: 4%;
 }
 .fondoimg{
-  width: 2100px;
-  height: 1000px;
+  width: 1520px;
+  height: 500px;
 }
+
+
 
 /* DETAIL SERIES-------------------------------------------------------------------------- */
 .contenedorprincipal{
-  background-image: url(../img/portadaserie.jpg);
-  background-size:1500px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   color: white;
   justify-content: space-around;
+  align-items: center;
 }
 .cajaserie{
-  background: linear-gradient(180deg,rgba(80, 80, 122, 0.002), rgb(3, 3, 53));
-  padding-top: 40%;
   padding-bottom: 0%;
-  padding-left: 4%;
-  align-items: flex-start;
 }
 .tituloserie{
   align-self: flex-start;
@@ -212,6 +213,7 @@
 .botones{
   display: flex;
   flex-wrap: wrap;
+  margin-left: 7%;
 }
 .favoritos{
   padding-left: 10px;

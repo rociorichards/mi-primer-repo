@@ -16,14 +16,14 @@ fetch(urlPopulares)
       html += `
         <article class="item">
 
-<<<<<<< HEAD
+
           <a href=" detalle.html?id=${ data.results[i].id }&tipo=tv">
-=======
+
           <a href="detalle.html?id=${ data.results[i].id }&tipo=movie">
 
 
           <a href=" detalle.html?id=${ data.results[i].id }&tipo=movie">
->>>>>>> cf8dc0cee8ddb75811107860a93d048992bb3151
+
 
           <a href="detalle.html?id=${ data.results[i].id }">
 
@@ -82,7 +82,7 @@ fetch(urlSeries)
     for(let i=0; i < data.results.length; i++) {
         html +=   `
           <article class="item">
-            <a href="detalle.html?id=${ data.results[i].id }&tipo=tv">
+            <a href="detalleseries.html?id=${ data.results[i].id }&tipo=tv">
               <img src="https://image.tmdb.org/t/p/w500/${ data.results[i].poster_path }" alt="pela" class="titan">
               <h4>
                 ${ data.results[i].original_name }

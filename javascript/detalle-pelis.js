@@ -9,7 +9,6 @@ let id= urlParams.get("id")// Sirve para captar específicamente el ID de una pe
 let container= document.querySelector('.caja')
 let section= document.querySelector('.sinopsis')
 
-console.log(id)
 
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8af3d9868`)
 //Func Asincrónica
