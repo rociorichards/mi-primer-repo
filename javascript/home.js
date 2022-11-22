@@ -17,7 +17,7 @@ fetch(urlPopulares)
         <article class="item">
 
 
-          <a href=" detalle.html?id=${ data.results[i].id }&tipo=tv">
+          <a href=" detalle.html?id=${ data.results[i].id }&tipo=movie">
 
           <a href="detalle.html?id=${ data.results[i].id }&tipo=movie">
 

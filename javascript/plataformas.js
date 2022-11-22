@@ -2,26 +2,37 @@ let query = location.search
 
 let urlParams= new URLSearchParams(query)
 
-let id= urlParams.get("id")
+let ID= urlParams.get("id");
 
-let divplataformas= document.querySelector('.plataformas')
+let divplataformas= document.querySelector('.plataformas');
 
-fetch( `https://api.themoviedb.org/3/tv/${id}/watch/providers?api_key=02e0e755b1f9c129e53aa7c8af3d9868 ` )
-.then(function(respuesta){
-    respuesta.json()
+let div='';
+
+console.log(ID)
+
+fetch( `https://api.themoviedb.org/3/movie/${ID}/watch/providers?api_key=02e0e755b1f9c129e53aa7c8af3d9868` )
+.then(function(response){
+    response.json()
+    console.log(response)
 })
 .then(function(data){
-    divplataformas.innerHTML= ` 
 
-    <section class="logos" src='https://image.tmdb.org/t/p/original${data.logo_path[1]}'>
-    <img class="imgplataf">
-  </section>
+    console.log(data)
+
+  /*   for(let i=0; i < info.results.length; i++) {
+    div= ` 
+
+    <section class="logos">
+    <img class="imgplataf" src='https://image.tmdb.org/t/p/original${data.logo_path[i]}'>
+    </section>
 
   <section class="nombreplataf">
     <p></p>
   </section>
   
-    ` 
+    `  
+  }*/
+    
 })
 .catch(function(error){
     console.log(error)
