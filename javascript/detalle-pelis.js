@@ -7,7 +7,7 @@ let id= urlParams.get("id")// Sirve para captar específicamente el ID de una pe
 
 let container1= document.querySelector('.caja')
 let section= document.querySelector('.sinopsis')
-let container2= document.querySelector('.datos ')
+let section2= document.querySelector('.datos ')
 
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8af3d9868`)
 //Func Asincrónica
@@ -31,11 +31,11 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
                     <i class="fa-solid fa-star"></i>
                 </section>
                 <section class="favoritos">
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <a href="favoritos.html"><i class="fa-solid fa-circle-plus"></i></a>
                 </section>       
             </div>
         `
-    //Hago lo mismo con la sinópsis, calificación (rating), fecha de estreno y la duración (sólo en las películas).
+    //Hago lo mismo con la sinópsis, calificación (rating), fecha de estreno y la duración.
 
     section.innerHTML = ` 
         <section class="sinopsis">
@@ -47,16 +47,21 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
        genero.push(data.genres[i].name )  
     }
 
-    container2.innerHTML=   ` 
+    section2.innerHTML=   ` 
     <p>Generos: <a href="detalle-genero.html" class="genero"> ${genero} </a></p>
     <p>Fecha de estreno: ${data.release_date}</p>
     <p>Duración: ${data.runtime} mins</p>
-    <p> Calificación: ${data.vote_average}  /10 </p> ` 
-    
-    
+    <p> Calificación: ${data.vote_average} /10 </p>
+    <a href="plataformas.html" class="plataformas">Otras plataformas</a> ` 
 
 })
 .catch(function(error){
     console.log(error)
 })
+
+//Lista de plataformas en donde se puede ver la película.
+
+let divplataformas= document.querySelector('.plataformas')
+fetch( `https://api.themoviedb.org/3/tv/${id}/watch/providers?api_key=02e0e755b1f9c129e53aa7c8af3d9868 ` )
+
 
