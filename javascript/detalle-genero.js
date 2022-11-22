@@ -1,16 +1,12 @@
-
 let urlParams = new URLSearchParams(window.location.search);
 let id_genero = urlParams.get('id');
 let urlPeliculas = 'https://api.themoviedb.org/3/discover/movie?api_key=02e0e755b1f9c129e53aa7c8af3d9868&with_genres=' + id_genero
 
 fetch(urlPeliculas)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){ 
-    seccion.innerHTML=`
+  .then(data => data.json())
+  .then(data => {
 
-    let contenedor = document.querySelector('.listado-items');
+    let contenedor = document.querySelector('#listado');
     let html = '';
     
     for(let i=0; i < data.results.length; i++) {

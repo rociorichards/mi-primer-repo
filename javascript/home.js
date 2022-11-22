@@ -12,7 +12,7 @@ fetch(urlPopulares)
     let contenedor = document.querySelector('.listado-items');
     let html = '';
     
-    for(let i=0; i < data.results.length; i++) {
+    for(let i=0 ; i < data.results.length; i++) {
       html += `
         <article class="item">
 
