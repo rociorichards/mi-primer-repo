@@ -5,13 +5,9 @@ let urlParams= new URLSearchParams(query)// Sirve para obtener los parametros de
 
 let id= urlParams.get("id")// Sirve para captar específicamente el ID de una pelicula 
 
-
 let container1= document.querySelector('.caja')
 let section= document.querySelector('.sinopsis')
 let container2= document.querySelector('.datos ')
-
-
-
 
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8af3d9868`)
 //Func Asincrónica
@@ -38,8 +34,6 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
                     <i class="fa-solid fa-circle-plus"></i>
                 </section>       
             </div>
-           
-
         `
     //Hago lo mismo con la sinópsis, calificación (rating), fecha de estreno y la duración (sólo en las películas).
 
@@ -47,8 +41,6 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
         <section class="sinopsis">
         <p>${data.overview}</p>
         </section>
-        
-
         `
     let genero= [] ;
     for(let i=0; i< data.genres.length; i++){
@@ -58,7 +50,10 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
     container2.innerHTML=   ` 
     <p>Generos: <a href="detalle-genero.html" class="genero"> ${genero} </a></p>
     <p>Fecha de estreno: ${data.release_date}</p>
-    <p>Duración:1h:40min</p> ` 
+    <p>Duración: ${data.runtime} mins</p>
+    <p> Calificación: ${data.vote_average}  /10 </p> ` 
+    
+    
 
 })
 .catch(function(error){
