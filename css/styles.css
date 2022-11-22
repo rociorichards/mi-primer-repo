@@ -345,7 +345,6 @@
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
-
 }
 .masgeneros{
   display: flex;
@@ -354,6 +353,10 @@
 .masmasgeneros{
   display: flex;
   flex-direction: column;
+}
+
+.sindecoracion{
+  color: rgba(121, 213, 247, 0.938);
 }
 
 @media only screen and (min-device-width:320px) and (max-device-width:425px) {

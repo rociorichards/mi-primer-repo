@@ -28,20 +28,16 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=02e0e755b1f9c129e53aa7
         if(i<8){
             divI+= ` 
                 <ul class="clasif">
-                    <a  class="sindecoracion"href="generos.html?idDeGenero=${arrayDeGeneros[i].id}&genero=${arrayDeGeneros[i].name}"> </a>
-                    <li> ${arrayDeGeneros[i].name} </li>
+                    <a  class="sindecoracion"href="detalle-genero.html?idDeGenero=${arrayDeGeneros[i].id}&genero=${arrayDeGeneros[i].name}"> ${arrayDeGeneros[i].name} </a>
                     </a>
                 </ul>
         ` 
         contenedorI.innerHTML = divI
         }
         else{
-            console.log(i)
-            console.log(arrayDeGeneros)
             divII+= ` 
                 <ul class="clasif">
-                    <a  class="sindecoracion"href="generos.html?idDeGenero=${arrayDeGeneros[i].id}&genero=${arrayDeGeneros[i].name}"> </a>
-                    <li> ${arrayDeGeneros[i].name} </li>
+                    <a  class="sindecoracion"href="detalle-genero.html?idDeGenero=${arrayDeGeneros[i].id}&genero=${arrayDeGeneros[i].name}"> ${arrayDeGeneros[i].name} </a>
                     </a>
                 </ul> ` 
             contenedorII.innerHTML = divII
