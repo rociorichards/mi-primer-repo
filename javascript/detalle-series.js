@@ -6,9 +6,13 @@ let urlParams= new URLSearchParams(query)
 
 let id= urlParams.get("id")
 
-let contenedor= document.querySelector('.cajaserie')
+console.log(id)
 
-let seccion= document.querySelector('.sinopsis')
+console.log("hola")
+
+let contenedor0= document.querySelector('.cajaserie')
+
+let seccion0= document.querySelector('.sinopsis')
 
 
 fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=02e0e755b1f9c129e53aa7c8af3d9868`)
@@ -17,14 +21,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=02e0e755b1f9c129e53aa7c8af3
     return response.json()
 })
 .then(function(data){ 
-    seccion.innerHTML=` 
-    
-            <section class="sinopsis">
-            <p>${data.overview}</p>
-            </section>
-
-        ` 
-    contenedor.innerHTML=` 
+    contenedor0.innerHTML=` 
         <img class='fondoimg' src='https://image.tmdb.org/t/p/original${data.backdrop_path}' />
         <h1 class="titulo">${data.original_name}</h1>
         <div class="botones">
@@ -41,6 +38,13 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=02e0e755b1f9c129e53aa7c8af3
         </div>
     
     ` 
+    seccion0.innerHTML=` 
+    
+    <section class="sinopsis">
+    <p>${data.overview}</p>
+    </section>
+
+` 
 
 
 })
