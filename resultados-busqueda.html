@@ -24,123 +24,23 @@
 
     <div>
       <form action="resultados-busqueda.html">
-        <input type="text" class="buscar">
+        <input required name="buscar"  placeholder="Buscar" type="text" class="buscar">
         <input type="submit" value="Buscar" class="buscar">
       </form>
     </div>
   </header>
 
 <main>
-    <section>
-        <h1 class="segundo">Resultados de búsqueda  </h1>
-        <p class="ro">Resultados de tu busqueda</p>
-        <h1 style="color: white;">Películas</h1>
-        <div class="listado-items">
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/rapidos.jpeg" alt="item1">
-                <h3 class="item2">
-                    Rapidos y Furiosos 5
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/jumanji.jpeg" alt="item1">
-                <h3 class="item2">
-                    Jumanji
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/dog.jpeg" alt="item1">
-                <h3 class="item2">
-                    Dog: Un viaje salvaje
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/Shrekban.png" alt="item1">
-                <h3 class="item2">
-                    Shrek tercero
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/thor.jpeg" alt="item1">
-                <h3 class="item2">
-                    Thor
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/Cruella-196211257-large.jpeg" alt="item1">
-                <h3 class="item2">
-                    Cruella
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/titanic foto.jpg" alt="item1">
-                <h3 class="item2">
-                    Titanic
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/Y_donde_estan_las_rubias.jpeg" alt="item1">
-                <h3 class="item2">
-                  ¿Y dónde están las rubias?
-                </h3>
-              </a>
-            </article>
-        </div>  
-      </section>
-      <section>
-      
-        <h1 style="color: white">Series</h1>
-        <div class="listado-items">
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/greys.jpeg" alt="item1">
-                <h3 class="item2">
-                    Grey's Anatomy
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/poster-friends.jpeg" alt="item1">
-                <h3 class="item2">
-                    Friends
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/got.jpeg" alt="item1">
-                <h3 class="item2">
-                    Game of Thrones
-                </h3>
-              </a>
-            </article>
-            <article class="item1">
-              <a href="detalle.html">
-                <img src="./img/the office.jpeg" alt="item1">
-                <h3 class="item2">
-                    The Office
-                </h3>
-              </a>
-            </article>
-        </div>  
-      </section>
-   
+  <section>
+    <h1 class="segundo">Resultados de busqueda: <span id= "buscado"></span></h1>
+    <h1 style="color: white;">Peliculas</h1>
+    <div id="peliculas" class="listado-items"></div>
+  </section>
+  <section>
+    <h1 style="color: white;">Series</h1>
+    <div id="series" class="listado-items"></div>
+    <script src="javascript/resultados_de_busqueda.js"></script>
+  </section>
 </main>
 
 

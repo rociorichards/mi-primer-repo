@@ -21,7 +21,7 @@
     </nav>
     <div>
       <form action="resultados-busqueda.html">
-        <input type="text" class="buscar">
+        <input required name="buscar"  placeholder="Buscar" type="text" class="buscar">
         <input type="submit" value="Buscar" class="buscar">
       </form>
     </div>
@@ -42,19 +42,21 @@
           <i class="fa-solid fa-star"></i>
           </section>
           <section class="favoritos">
-          <i class="fa-solid fa-circle-plus"></i>
+         <i class="fa-solid fa-circle-plus"></i></a>
           </section>       
         </div>
       </div>
     </div>
     <div class="contenido">
+
       <section class="datos">
-        <a href="detalle-genero.html">
-        <p>Genero: Aventura</p>
-      </a>
+        <p> Genero: <a href="detalle-genero.html" class="genero">Aventura</a></p>
         <p>Fecha de estreno:</p>
         <p>Duración:1h:40min</p>
+        <p> Calificación: </p>
+        <a href="plataformas.html" class="plataformas">Otras plataformas</a>
       </section>
+
       <section class="sinopsis">
         <p></p>
       </section>

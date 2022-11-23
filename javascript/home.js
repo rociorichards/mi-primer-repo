@@ -17,7 +17,7 @@ fetch(urlPopulares)
         <article class="item">
 
 
-          <a href=" detalle.html?id=${ data.results[i].id }&tipo=tv">
+          <a href=" detalle.html?id=${ data.results[i].id }&tipo=movie">
 
           <a href="detalle.html?id=${ data.results[i].id }&tipo=movie">
 
@@ -55,7 +55,7 @@ fetch(urlMasVisto)
    for(let i=0; i < data.results.length; i++) {
     html +=   `
       <article class="item">
-        <a href=detalle.html?id=${ data.results[i].id }&tipo=movie">
+        <a href=detalle.html?id=${ data.results[i].id }">
           <img src="https://image.tmdb.org/t/p/w500/${ data.results[i].poster_path }" alt="pela" class="titan">
           <h4>
             ${ data.results[i].title }
@@ -82,7 +82,7 @@ fetch(urlSeries)
     for(let i=0; i < data.results.length; i++) {
         html +=   `
           <article class="item">
-            <a href="detalle.html?id=${ data.results[i].id }&tipo=tv">
+            <a href="detalleseries.html?id=${ data.results[i].id }&tipo=tv">
               <img src="https://image.tmdb.org/t/p/w500/${ data.results[i].poster_path }" alt="pela" class="titan">
               <h4>
                 ${ data.results[i].original_name }
