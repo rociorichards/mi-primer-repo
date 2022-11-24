@@ -33,7 +33,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=02e0e755b1f9c129e53aa7c8af3
                 <i class="fa-solid fa-star"></i>
             </section>
             <section class="favoritos">
-                <i class="fa-solid fa-circle-plus"></i>
+                <i id="agregarFavorito" class="fa-solid fa-circle-plus"></i>
             </section>       
         </div>
     
@@ -57,6 +57,35 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=02e0e755b1f9c129e53aa7c8af3
     <a href=" plataformasseries.html?id=${ data.id }&tipo=tv"> Otras plataformas</a> ` 
     
     
+//agregar a favoritos
+document.querySelector('#agregarFavorito').addEventListener('click', function(){
+
+    let series = [];
+
+    let datosLocalStorage = localStorage.getItem('series');
+
+    if(datosLocalStorage) {
+        series = JSON.parse(datosLocalStorage);
+
+        let estaGuardada = false;
+
+        for(let i = 0; i < series.length; i++) {
+            if(data.id == series[i].id) {
+                estaGuardada = true;
+            }
+        }
+
+        if(!estaGuardada) {
+            series.push(data)
+        }
+
+    }
+    else {
+        series.push(data)
+    }
+
+    localStorage.setItem('series', JSON.stringify(series))
+})
 
 
 })

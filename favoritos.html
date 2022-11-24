@@ -20,28 +20,82 @@
     </nav>
     <div>
       <form action="resultados-busqueda.html">
-        <input type="text" class="buscar">
-        <input type="submit" value="Buscar" class="buscar">
+        <input required name="buscar"  placeholder="Buscar" type="text" class="buscar"> 
+        <input type="submit" class="buscar">
       </form>
     </div>
+  
   </header>
-  <main>
-    <div class="udesa">
-        <h1 class="rochi"> Tus peliculas favoritas</h1>
-        <article class="yo">
-            <img src="./img/jumanji.jpeg" alt="Imagen Jumanji" class="jumanjii">
-            <img src= "./img/titanic foto.jpg" alt="Imagen titanic" class="titanicc">
-            <img src="./img/Shrekban.png" alt="Imagen shrek" class="rocioo">
-          
-        </article>
-        <h1 class="rochi"> Tus series favoritas </h1>
-        <article class="perro">
-          <img src="img/poster-friends.jpeg" alt="Imagen friends" class="gatoo">
-        <img src="img/got.jpeg" alt="Imagen got" class="gato11">
-        <img src="img/greys.jpeg" alt="Imagen Greys anatomy" class="grey11">
-        </article>
+  
+  <section>
+    <h2>Películas</h2>
+
+    <div id="peliculas-favoritas" class="listado-items"> 
     </div>
-  </main>
+
+  </section>
+  
+  <section>
+    <h2>Series</h2>
+
+    <div id="series-favoritas" class="listado-items2"> 
+
+      <article class="item">
+        <a href="detalleseries.html">
+          <img src="img/greys.jpeg" alt="meredith" class="grey">
+          <h4>
+            Grey's Anatomy
+          </h4>
+          <p>Estrenada 23/05/2012</p>
+
+        </a>
+        
+        </article>
+      
+      
+    
+      <article class="item">
+        <a href="detalleseries.html">
+          <img src="img/poster-friends.jpeg" alt="amigos" class="amigo">
+          <h4>
+            Friends
+          </h4>
+          <p>Estrenada 03/10/2015</p>
+        </a>
+      </article>
+
+      <article class="item">
+        <a href="detalleseries.html">
+          <img src="img/got.jpeg" alt="game" class="got">
+          <h4>
+            Game of Thrones
+          </h4>
+          <p>Estrenada 10/03/2019</p>
+
+        </a>
+        
+        </article>
+
+        <article class="item">
+          <a href="detalleseries.html">
+            <img src="img/the office.jpeg" alt="tho" class="to">
+            <h4>
+              The Office
+            </h4>
+            <p>Estrenada 31/10/2014</p>
+
+          </a>
+          
+          </article>
+
+    
+
+    </div>
+
+  </section>
+  
+
+</main>
   
   
   <footer>
