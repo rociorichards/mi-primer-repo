@@ -21,7 +21,7 @@ fetch( `https://api.themoviedb.org/3/movie/${ID}/watch/providers?api_key=02e0e75
     let arrayProviders = [];
 
     for(let i=0; i<keys.length; i++){
-        if (keys[i] == "AR"){
+        if (keys[i] == "US"){
             arrayProviders.push(data.results[keys[i]])
         } 
     }

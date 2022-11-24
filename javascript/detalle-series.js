@@ -61,7 +61,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=02e0e755b1f9c129e53aa7c8af3
 document.querySelector('#agregarFavorito').addEventListener('click', function(){
 
     let series = [];
-
+ 
     let datosLocalStorage = localStorage.getItem('series');
 
     if(datosLocalStorage) {

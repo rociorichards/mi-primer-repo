@@ -33,7 +33,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
                     <i class="fa-solid fa-star"></i>
                 </section>
                 <section class="favoritos">
-                    <i id="agregarFavorito" clas="fa-solid fa-circle-plus"></i>
+                    <i id="agregarFavorito" class="fa-solid fa-circle-plus"></i>
                 </section>       
             </div>
         `
@@ -57,7 +57,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
     <p> Calificación: ${data.vote_average} /10 </p>
     <a href=" plataformas.html?id=${ data.id }&tipo=movie"> Otras plataformas</a>
    ` 
-
+ 
    //agrego a favoritos
    document.querySelector('#agregarFavorito').addEventListener('click', function(){
 
@@ -70,14 +70,15 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
 
         let estaGuardada = false;
 
-        for(let i = 0; i < peliculas.length; i++)
+        for(let i = 0; i < peliculas.length; i++){ 
             if(data.id == peliculas[i].id) {
                 estaGuardada = true;
             }
-    
-   }
-    if(!estaGuardada) {
-        peliculas.push(data)
+        }
+   
+        if(!estaGuardada) {
+            peliculas.push(data)
+        }
     }
     else {
         peliculas.push(data)
