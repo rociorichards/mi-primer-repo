@@ -95,7 +95,38 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
     console.log(error)
 })
 
-//Lista de plataformas en donde se puede ver la película.
+
+//recomendaciones
+
+
+fetch( ` https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=02e0e755b1f9c129e53aa7c8af3d9868&language=en-US&page=1 ` )
+  .then(function(response) {
+  return response.json()
+  })
+  .then(function(information) {
+   console.log(information)
+
+   let ul =document.querySelector(".recomendaciones")
+
+   for (let i = 0; i < information.results.length; i++) {
+     let id=information.results[i].id;
+     let titulo=information.results[i].title;
+     let poster=information.results[i].poster_path;
+
+     li="<li>"
+     li+="<p>"+titulo+"</p>"
+     li+="<a href=detalle.html?id="+id+">"
+     li+="</a>"
+     li+="</li>"
+     ul.innerHTML+=li
+     
+   }
+  })
+
+  .catch(function(error) {
+  console.log("Error: " + error);
+  })
+
 
 
 
