@@ -10,7 +10,7 @@ let contain2 = document.querySelector(".comprarPelis")
 
 console.log(ID)
 
-fetch( `https://api.themoviedb.org/3/movie/${ID}/watch/providers?api_key=02e0e755b1f9c129e53aa7c8af3d9868` )
+fetch( `https://api.themoviedb.org/3/tv/${ID}/watch/providers?api_key=02e0e755b1f9c129e53aa7c8af3d9868` )
 .then(function(response){
     return response.json()
     
@@ -64,10 +64,4 @@ fetch( `https://api.themoviedb.org/3/movie/${ID}/watch/providers?api_key=02e0e75
 .catch(function(error){
     console.log(error)
 })
-
-
-
-
-
-
 

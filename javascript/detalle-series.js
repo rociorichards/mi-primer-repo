@@ -53,7 +53,8 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=02e0e755b1f9c129e53aa7c8af3
     seccion1.innerHTML=   ` 
     <p>Generos: <a href="detalle-genero.html" class="genero"> ${genero} </a></p>
     <p>Fecha de estreno: ${data.first_air_date}</p>
-    <p> Calificación: ${data.vote_average} /10 </p> ` 
+    <p> Calificación: ${data.vote_average} /10 </p>
+    <a href=" plataformasseries.html?id=${ data.id }&tipo=tv"> Otras plataformas</a> ` 
     
     
 
