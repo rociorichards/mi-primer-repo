@@ -8,8 +8,6 @@ let id= urlParams.get("id")
 
 console.log(id)
 
-console.log("hola")
-
 let contenedor0= document.querySelector('.cajaserie')
 
 let seccion0= document.querySelector('.sinopsis')

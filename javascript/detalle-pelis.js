@@ -46,6 +46,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=02e0e755b1f9c129e53aa7c8
         `
     let genero= [] ;
     for(let i=0; i< data.genres.length; i++){
+        console.log(i)
        genero.push(data.genres[i].name )  
     }
 
